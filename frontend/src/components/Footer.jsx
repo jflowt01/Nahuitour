@@ -13,9 +13,9 @@ export const Footer = () => {
           <div>
             <div className="flex items-center gap-2 mb-4">
               <div className="w-10 h-10 rounded-lg bg-primary flex items-center justify-center">
-                <span className="text-xl font-bold text-primary-foreground">PN</span>
+                <span className="text-xl font-bold text-primary-foreground">NT</span>
               </div>
-              <span className="font-semibold text-lg">Pueblo Nuevo</span>
+              <span className="font-semibold text-lg">NahuiTour</span>
             </div>
             <p className="text-sm text-muted-foreground leading-relaxed">
               {t('aboutText')}

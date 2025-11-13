@@ -4,7 +4,8 @@ export const locations = [
     name: 'Cabañas El Bosque',
     type: 'cabin',
     capacity: 60,
-    image: 'https://images.unsplash.com/photo-1449158743715-0a90ebb6d2d8?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NDk1Nzh8MHwxfHNlYXJjaHwxfHxmb3Jlc3QlMjBjYWJpbnxlbnwwfHx8fDE3NjI5ODU1NzF8MA&ixlib=rb-4.1.0&q=85',
+    //image: 'https://images.unsplash.com/photo-1449158743715-0a90ebb6d2d8?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NDk1Nzh8MHwxfHNlYXJjaHwxfHxmb3Jlc3QlMjBjYWJpbnxlbnwwfHx8fDE3NjI5ODU1NzF8MA&ixlib=rb-4.1.0&q=85',
+    image: "https://res.cloudinary.com/ddwxh8oxg/image/upload/v1763044285/verde_ydlllf.jpg",
     description: {
       es: 'Acogedoras cabañas rodeadas de naturaleza',
       en: 'Cozy cabins surrounded by nature',
@@ -61,16 +62,17 @@ export const locations = [
     hours: '10:00-20:00'
   },
   {
-    id: 6,
-    name: 'Cabañas Vista Hermosa',
-    type: 'cabin',
-    capacity: 40,
-    image: 'https://images.unsplash.com/photo-1515592559813-3f7dff97e185?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NDk1Nzh8MHwxfHNlYXJjaHwyfHxmb3Jlc3QlMjBjYWJpbnxlbnwwfHx8fDE3NjI5ODU1NzF8MA&ixlib=rb-4.1.0&q=85',
-    description: {
-      es: 'Vistas panorámicas del valle y montañas',
-      en: 'Panoramic views of valley and mountains',
-      fr: 'Vues panoramiques sur la vallée et les montagnes'
-    }
+        id: 6,
+        name: 'Cabañas Vista Hermosa',
+        type: 'cabin',
+        capacity: 40,
+        image: 'https://images.unsplash.com/photo-1515592559813-3f7dff97e185?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NDk1Nzh8MHwxfHNlYXJjaHwyfHxmb3Jlc3QlMjBjYWJpbnxlbnwwfHx8fDE3NjI5ODU1NzF8MA&ixlib=rb-4.1.0&q=85',
+        //image: '/assets/cabaña.jpeg"',
+        description: {
+          es: 'Vistas panorámicas del valle y montañas',
+          en: 'Panoramic views of valley and mountains',
+          fr: 'Vues panoramiques sur la vallée et les montagnes'
+        }
   },
   {
     id: 7,

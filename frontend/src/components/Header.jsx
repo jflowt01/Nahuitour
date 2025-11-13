@@ -35,9 +35,9 @@ export const Header = () => {
           {/* Logo */}
           <Link to="/" className="flex items-center gap-2 group">
             <div className="w-10 h-10 rounded-lg bg-primary flex items-center justify-center transition-smooth group-hover:scale-105">
-              <span className="text-xl font-bold text-primary-foreground">PN</span>
+              <span className="text-xl font-bold text-primary-foreground">NT</span>
             </div>
-            <span className="font-semibold text-lg hidden sm:inline">Pueblo Nuevo</span>
+            <span className="font-semibold text-lg hidden sm:inline">NahuiTour</span>
           </Link>
 
           {/* Desktop Navigation */}
