@@ -35,9 +35,9 @@ export const Header = () => {
           {/* Logo */}
           <Link to="/" className="flex items-center gap-2 group">
             <img 
-              src="https://customer-assets.emergentagent.com/job_96941555-751d-4e74-9e3f-61517f5c6456/artifacts/dt2sgpii_NahuiTour.png" 
+              src="https://customer-assets.emergentagent.com/job_96941555-751d-4e74-9e3f-61517f5c6456/artifacts/id3ujf1y_Nombre.png" 
               alt="NahuiTour" 
-              className="h-12 w-auto transition-smooth group-hover:scale-105"
+              className="h-10 w-auto transition-smooth group-hover:scale-105"
             />
           </Link>
 
