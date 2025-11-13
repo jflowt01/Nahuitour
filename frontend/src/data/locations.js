@@ -1,65 +1,63 @@
 export const locations = [
   {
     id: 1,
-    name: 'Cabañas El Bosque',
-    type: 'cabin',
+    name: 'El Diamante',
+    type: 'ecopark',
     capacity: 60,
-    //image: 'https://images.unsplash.com/photo-1449158743715-0a90ebb6d2d8?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NDk1Nzh8MHwxfHNlYXJjaHwxfHxmb3Jlc3QlMjBjYWJpbnxlbnwwfHx8fDE3NjI5ODU1NzF8MA&ixlib=rb-4.1.0&q=85',
-    image: "https://res.cloudinary.com/ddwxh8oxg/image/upload/v1763044285/verde_ydlllf.jpg",
+    image: 'https://customer-assets.emergentagent.com/job_96941555-751d-4e74-9e3f-61517f5c6456/artifacts/oay6y1md_Diamante.jpg',
     description: {
-      es: 'Acogedoras cabañas rodeadas de naturaleza',
-      en: 'Cozy cabins surrounded by nature',
-      fr: 'Cabanes confortables entourées de nature'
+      es: 'Hermoso parque natural con áreas recreativas y juegos infantiles',
+      en: 'Beautiful natural park with recreational areas and children\'s games',
+      fr: 'Magnifique parc naturel avec aires de loisirs et jeux pour enfants'
     }
   },
   {
     id: 2,
-    name: 'Alberca Las Cascadas',
-    type: 'pool',
+    name: 'Rancho Nuevo',
+    type: 'ecopark',
     capacity: 100,
-    image: 'https://images.unsplash.com/photo-1623334999098-7333609260cd?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NDQ2NDN8MHwxfHNlYXJjaHwxfHxuYXR1cmFsJTIwcG9vbHxlbnwwfHx8fDE3NjI5ODU1ODF8MA&ixlib=rb-4.1.0&q=85',
+    image: 'https://customer-assets.emergentagent.com/job_96941555-751d-4e74-9e3f-61517f5c6456/artifacts/fxmpsish_Rancho_Nuevo.jpg',
     description: {
-      es: 'Alberca natural con vista a las cascadas',
-      en: 'Natural pool with waterfall views',
-      fr: 'Piscine naturelle avec vue sur les cascades'
+      es: 'Senderos naturales entre bosques de pinos con aire fresco de montaña',
+      en: 'Natural trails through pine forests with fresh mountain air',
+      fr: 'Sentiers naturels à travers les forêts de pins avec air frais de montagne'
     }
   },
   {
     id: 3,
-    name: 'Río Cristalino',
+    name: 'Rio Sangre',
     type: 'river',
     capacity: 150,
-    image: 'https://images.pexels.com/photos/6942667/pexels-photo-6942667.jpeg',
+    image: 'https://customer-assets.emergentagent.com/job_96941555-751d-4e74-9e3f-61517f5c6456/artifacts/rp2za4rm_Rio_Sangre.jpg',
     description: {
-      es: 'Río de aguas cristalinas para nadar y explorar',
-      en: 'Crystal clear river for swimming and exploring',
-      fr: 'Rivière aux eaux cristallines pour nager et explorer'
+      es: 'Río natural con pozas cristalinas para nadar y refrescarse',
+      en: 'Natural river with crystal clear pools for swimming and refreshment',
+      fr: 'Rivière naturelle avec bassins cristallins pour nager et se rafraîchir'
     }
   },
   {
     id: 4,
-    name: 'Parque Ecoturístico La Selva',
-    type: 'ecopark',
-    capacity: 200,
-    image: 'https://images.unsplash.com/photo-1755103910358-b7834600e964?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NDQ2NDJ8MHwxfHNlYXJjaHwzfHxqdW5nbGUlMjBlY28lMjBwYXJrfGVufDB8fHx8MTc2Mjk4NTU4N3ww&ixlib=rb-4.1.0&q=85',
+    name: 'Siempre Verde',
+    type: 'cabin',
+    capacity: 80,
+    image: 'https://customer-assets.emergentagent.com/job_96941555-751d-4e74-9e3f-61517f5c6456/artifacts/w7p0irsj_Siempre_Verde.jpeg',
     description: {
-      es: 'Aventuras en la selva con senderos guiados',
-      en: 'Jungle adventures with guided trails',
-      fr: 'Aventures dans la jungle avec sentiers guidés'
+      es: 'Cabañas acogedoras rodeadas de bosque verde durante todo el año',
+      en: 'Cozy cabins surrounded by year-round green forest',
+      fr: 'Cabanes confortables entourées de forêt verte toute l\'année'
     }
   },
   {
     id: 5,
-    name: 'Restaurante Sabor Chiapaneco',
-    type: 'restaurant',
-    capacity: 40,
-    image: 'https://images.unsplash.com/photo-1759156241324-6343c446a27c?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2Nzd8MHwxfHNlYXJjaHwyfHxvdXRkb29yJTIwcmVzdGF1cmFudCUyMG5hdHVyZXxlbnwwfHx8fDE3NjI5ODU1OTZ8MA&ixlib=rb-4.1.0&q=85',
+    name: 'Yerbabuena',
+    type: 'ecopark',
+    capacity: 120,
+    image: 'https://customer-assets.emergentagent.com/job_96941555-751d-4e74-9e3f-61517f5c6456/artifacts/3xjy2995_yerba.jpg',
     description: {
-      es: 'Cocina tradicional chiapaneca al aire libre',
-      en: 'Traditional Chiapas cuisine outdoors',
-      fr: 'Cuisine traditionnelle du Chiapas en plein air'
-    },
-    hours: '10:00-20:00'
+      es: 'Rancho familiar con amplias áreas verdes y ambiente tranquilo',
+      en: 'Family ranch with large green areas and peaceful atmosphere',
+      fr: 'Ranch familial avec de grands espaces verts et atmosphère paisible'
+    }
   },
   {
         id: 6,
