@@ -31,7 +31,7 @@ export const Header = () => {
   return (
     <header className="fixed top-0 w-full bg-card/95 backdrop-blur-sm border-b border-border z-50 shadow-sm">
       <div className="container mx-auto px-4">
-        <div className="flex items-center justify-between h-16">
+        <div className="flex items-center justify-between h-20 sm:h-24">
           {/* Logo */}
           <Link to="/" className="flex items-center gap-2 group">
             <img 
