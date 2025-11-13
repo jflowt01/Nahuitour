@@ -34,38 +34,43 @@ export default function AdminPage() {
     const user = ADMIN_USERS.find(u => u.username === username && u.password === password);
     if (user) {
       setLoggedIn(true);
+      setCurrentUser(user);
       toast.success(t('success'));
     } else {
       toast.error(t('invalidCredentials'));
     }
   };
 
-  const todayBookings = bookings.filter(b => {
+  // Get the location for current user
+  const userLocation = currentUser ? locations.find(l => l.id === currentUser.locationId) : null;
+
+  // Filter bookings for current user's location only
+  const locationBookings = bookings.filter(b => b.locationId === currentUser?.locationId && b.status === 'confirmed');
+
+  const todayBookings = locationBookings.filter(b => {
     const bookingDate = new Date(b.date);
     const today = new Date();
-    return bookingDate.toDateString() === today.toDateString() && b.status === 'confirmed';
+    return bookingDate.toDateString() === today.toDateString();
   });
 
-  const upcomingBookings = bookings
+  const upcomingBookings = locationBookings
     .filter(b => {
       const bookingDate = new Date(b.date);
       const today = new Date();
-      return bookingDate >= today && b.status === 'confirmed';
+      return bookingDate >= today;
     })
     .sort((a, b) => new Date(a.date) - new Date(b.date));
 
   const filteredBookings = upcomingBookings.filter(b => {
-    const location = locations.find(l => l.id === b.locationId);
     const searchLower = searchTerm.toLowerCase();
     return (
       b.id.toLowerCase().includes(searchLower) ||
       b.name.toLowerCase().includes(searchLower) ||
-      b.date.includes(searchTerm) ||
-      location?.name.toLowerCase().includes(searchLower)
+      b.date.includes(searchTerm)
     );
   });
 
-  const totalCapacity = locations.reduce((sum, l) => sum + l.capacity, 0);
+  const totalCapacity = userLocation?.capacity || 0;
   const todayOccupied = todayBookings.reduce((sum, b) => sum + b.persons, 0);
   const occupancyPercentage = totalCapacity > 0 ? Math.round((todayOccupied / totalCapacity) * 100) : 0;
 
