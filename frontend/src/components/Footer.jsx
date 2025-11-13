@@ -12,10 +12,11 @@ export const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           <div>
             <div className="flex items-center gap-2 mb-4">
-              <div className="w-10 h-10 rounded-lg bg-primary flex items-center justify-center">
-                <span className="text-xl font-bold text-primary-foreground">NT</span>
-              </div>
-              <span className="font-semibold text-lg">NahuiTour</span>
+              <img 
+                src="https://customer-assets.emergentagent.com/job_96941555-751d-4e74-9e3f-61517f5c6456/artifacts/dt2sgpii_NahuiTour.png" 
+                alt="NahuiTour" 
+                className="h-10 w-auto"
+              />
             </div>
             <p className="text-sm text-muted-foreground leading-relaxed">
               {t('aboutText')}
