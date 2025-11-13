@@ -12,19 +12,20 @@ import { calculateAvailability } from '../data/mockBookings';
 import { toast } from 'sonner';
 
 const ADMIN_USERS = [
-  { username: 'dueno1', password: 'demo123' },
-  { username: 'dueno2', password: 'demo123' },
-  { username: 'dueno3', password: 'demo123' },
-  { username: 'dueno4', password: 'demo123' },
-  { username: 'dueno5', password: 'demo123' },
-  { username: 'dueno6', password: 'demo123' },
-  { username: 'dueno7', password: 'demo123' },
+  { username: 'dueno1', password: 'demo123', locationId: 1 }, // Cabañas El Bosque
+  { username: 'dueno2', password: 'demo123', locationId: 2 }, // Alberca Las Cascadas
+  { username: 'dueno3', password: 'demo123', locationId: 3 }, // Río Cristalino
+  { username: 'dueno4', password: 'demo123', locationId: 4 }, // Parque Ecoturístico La Selva
+  { username: 'dueno5', password: 'demo123', locationId: 5 }, // Restaurante Sabor Chiapaneco
+  { username: 'dueno6', password: 'demo123', locationId: 6 }, // Cabañas Vista Hermosa
+  { username: 'dueno7', password: 'demo123', locationId: 7 }, // Alberca Natural Azul
 ];
 
 export default function AdminPage() {
-  const { t } = useLanguage();
+  const { t, language } = useLanguage();
   const { bookings } = useBooking();
   const [loggedIn, setLoggedIn] = useState(false);
+  const [currentUser, setCurrentUser] = useState(null);
   const [username, setUsername] = useState('');
   const [password, setPassword] = useState('');
   const [searchTerm, setSearchTerm] = useState('');
