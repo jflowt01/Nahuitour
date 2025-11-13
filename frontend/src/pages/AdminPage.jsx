@@ -116,13 +116,53 @@ export default function AdminPage() {
   return (
     <div className="min-h-screen pt-24 pb-12">
       <div className="container mx-auto px-4">
-        <div className="flex justify-between items-center mb-8">
-          <h1 className="text-3xl font-bold">{t('ownerDashboard')}</h1>
-          <Button variant="outline" onClick={() => setLoggedIn(false)}>
+        <div className="flex flex-col sm:flex-row justify-between items-start sm:items-center gap-4 mb-8">
+          <div>
+            <h1 className="text-3xl font-bold">{t('ownerDashboard')}</h1>
+            {userLocation && (
+              <p className="text-lg text-muted-foreground mt-1">
+                {userLocation.name}
+              </p>
+            )}
+          </div>
+          <Button variant="outline" onClick={() => { setLoggedIn(false); setCurrentUser(null); }}>
             <LogOut className="h-4 w-4 mr-2" />
             {t('logout')}
           </Button>
         </div>
+
+        {/* Location Info Card */}
+        {userLocation && (
+          <Card className="mb-8">
+            <CardContent className="p-6">
+              <div className="flex flex-col md:flex-row gap-6">
+                <img
+                  src={userLocation.image}
+                  alt={userLocation.name}
+                  className="w-full md:w-48 h-32 object-cover rounded-lg"
+                />
+                <div className="flex-1">
+                  <h2 className="text-xl font-semibold mb-2">{userLocation.name}</h2>
+                  <p className="text-sm text-muted-foreground mb-3">
+                    {userLocation.description[language]}
+                  </p>
+                  <div className="flex items-center gap-4 text-sm">
+                    <div className="flex items-center gap-2">
+                      <Users className="h-4 w-4 text-primary" />
+                      <span>{t('capacity')}: {userLocation.capacity} {t('people')}</span>
+                    </div>
+                    {userLocation.hours && (
+                      <div className="flex items-center gap-2">
+                        <Calendar className="h-4 w-4 text-primary" />
+                        <span>{userLocation.hours}</span>
+                      </div>
+                    )}
+                  </div>
+                </div>
+              </div>
+            </CardContent>
+          </Card>
+        )}
 
         {/* Summary Cards */}
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 mb-8">
