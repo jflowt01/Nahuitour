@@ -60,28 +60,27 @@ export const locations = [
     }
   },
   {
-        id: 6,
-        name: 'Cabañas Vista Hermosa',
-        type: 'cabin',
-        capacity: 40,
-        image: 'https://images.unsplash.com/photo-1515592559813-3f7dff97e185?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NDk1Nzh8MHwxfHNlYXJjaHwyfHxmb3Jlc3QlMjBjYWJpbnxlbnwwfHx8fDE3NjI5ODU1NzF8MA&ixlib=rb-4.1.0&q=85',
-        //image: '/assets/cabaña.jpeg"',
-        description: {
-          es: 'Vistas panorámicas del valle y montañas',
-          en: 'Panoramic views of valley and mountains',
-          fr: 'Vues panoramiques sur la vallée et les montagnes'
-        }
+    id: 6,
+    name: 'Universidad Linda Vista',
+    type: 'ecopark',
+    capacity: 200,
+    image: 'https://customer-assets.emergentagent.com/job_96941555-751d-4e74-9e3f-61517f5c6456/artifacts/y2i6c4w0_ulv.jpeg',
+    description: {
+      es: 'Campus universitario rodeado de naturaleza con áreas verdes y vistas panorámicas',
+      en: 'University campus surrounded by nature with green areas and panoramic views',
+      fr: 'Campus universitaire entouré de nature avec espaces verts et vues panoramiques'
+    }
   },
   {
     id: 7,
-    name: 'Alberca Natural Azul',
-    type: 'pool',
-    capacity: 80,
-    image: 'https://images.unsplash.com/photo-1690898796608-be19326b8fb3?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NDQ2NDN8MHwxfHNlYXJjaHwyfHxuYXR1cmFsJTIwcG9vbHxlbnwwfHx8fDE3NjI5ODU1ODF8MA&ixlib=rb-4.1.0&q=85',
+    name: 'Rio Grande',
+    type: 'river',
+    capacity: 150,
+    image: 'https://customer-assets.emergentagent.com/job_96941555-751d-4e74-9e3f-61517f5c6456/artifacts/tffer22v_Rio_Grande.jpeg',
     description: {
-      es: 'Piscina de agua azul turquesa en medio del bosque',
-      en: 'Turquoise blue pool in the middle of the forest',
-      fr: 'Piscine bleue turquoise au milieu de la forêt'
+      es: 'Río majestuoso con aguas turquesas y formaciones rocosas naturales',
+      en: 'Majestic river with turquoise waters and natural rock formations',
+      fr: 'Rivière majestueuse aux eaux turquoises et formations rocheuses naturelles'
     }
   }
 ];
