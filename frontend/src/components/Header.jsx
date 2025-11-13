@@ -37,7 +37,7 @@ export const Header = () => {
             <img 
               src="https://customer-assets.emergentagent.com/job_96941555-751d-4e74-9e3f-61517f5c6456/artifacts/id3ujf1y_Nombre.png" 
               alt="NahuiTour" 
-              className="h-10 w-auto transition-smooth group-hover:scale-105"
+              className="h-16 sm:h-20 w-auto transition-smooth group-hover:scale-105"
             />
           </Link>
 
