@@ -231,7 +231,6 @@ export default function AdminPage() {
             ) : (
               <div className="space-y-4">
                 {filteredBookings.map(booking => {
-                  const location = locations.find(l => l.id === booking.locationId);
                   return (
                     <div key={booking.id} className="border rounded-lg p-4 hover:bg-muted/30 transition-smooth">
                       <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-3">
@@ -242,14 +241,14 @@ export default function AdminPage() {
                               {t('confirmed')}
                             </Badge>
                           </div>
-                          <p className="text-sm">{booking.name}</p>
-                          <p className="text-xs text-muted-foreground">{location?.name}</p>
+                          <p className="text-sm font-medium">{booking.name}</p>
+                          <p className="text-xs text-muted-foreground">{booking.email}</p>
                         </div>
-                        <div className="text-sm text-right space-y-1">
+                        <div className="text-sm sm:text-right space-y-1">
                           <p className="font-medium">{booking.date}</p>
                           {booking.time && <p className="text-muted-foreground">{booking.time}</p>}
                           <p className="text-muted-foreground">{booking.persons} {t('people')}</p>
-                          <p className="text-xs">{booking.phone}</p>
+                          <p className="text-xs font-medium">{booking.phone}</p>
                         </div>
                       </div>
                     </div>
