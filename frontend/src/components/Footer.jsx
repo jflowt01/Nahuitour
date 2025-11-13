@@ -13,9 +13,9 @@ export const Footer = () => {
           <div>
             <div className="flex items-center gap-2 mb-4">
               <img 
-                src="https://customer-assets.emergentagent.com/job_96941555-751d-4e74-9e3f-61517f5c6456/artifacts/dt2sgpii_NahuiTour.png" 
+                src="https://customer-assets.emergentagent.com/job_96941555-751d-4e74-9e3f-61517f5c6456/artifacts/id3ujf1y_Nombre.png" 
                 alt="NahuiTour" 
-                className="h-10 w-auto"
+                className="h-8 w-auto"
               />
             </div>
             <p className="text-sm text-muted-foreground leading-relaxed">
