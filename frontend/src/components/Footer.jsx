@@ -15,7 +15,7 @@ export const Footer = () => {
               <img 
                 src="https://customer-assets.emergentagent.com/job_96941555-751d-4e74-9e3f-61517f5c6456/artifacts/id3ujf1y_Nombre.png" 
                 alt="NahuiTour" 
-                className="h-8 w-auto"
+                className="h-14 w-auto"
               />
             </div>
             <p className="text-sm text-muted-foreground leading-relaxed">
